@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   get 'gossips', to: 'gossips#index', as: 'all'
   get 'gossips/new', to: 'gossips#new'
   post'gossips/new', to: 'gossips#create', as:'new'
-  resources  :gossips
   get 'gossips/index', to: 'gossips#index'
 
 
