@@ -1,0 +1,8 @@
+<h1> Hello ici vous pouvez déverser tous les gossips !! <h1>
+</br>
+<%= form_for :gossip do |f| %>
+Anon Name: <%= f.text_field :anonymous_author %><br />
+
+Gossip : <%= f.text_area :content %><br />
+<%= f.submit %>
+<% end %>
